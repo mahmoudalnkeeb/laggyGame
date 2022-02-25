@@ -13,6 +13,7 @@ const total = document.getElementById('total');
 const counter = document.getElementById('counter');
 const retry = document.getElementById('restart');
 const showSettings = document.getElementById('settings');
+const bad = document.getElementById('bad');
 const clickEffect = new Audio('./assets/sounds/click.wav');
 const winEffect = new Audio('./assets/sounds/win.wav');
 const failEffect = new Audio('./assets/sounds/fail.wav');
@@ -102,6 +103,7 @@ function startGame(difficultySpeed, gameTime) {
     accurcy.innerText = '';
     missed.innerText = '';
     total.innerText = '';
+    bad.innerText = '';
 
     // time remaining counter
 
@@ -179,65 +181,21 @@ function startGame(difficultySpeed, gameTime) {
       accurcy.append(accurcyText);
       missedSpan.append(missedText);
       total.append(totalText);
+
       if (value < 50) {
-        failEffect.play()
-        alert('Cuz of ur bad aim your browser gonna freeze 🙂');
+        failEffect.play();
         gameEnd.style.display = 'flex';
-        lag();
-          
+        bad.innerText = 'NOOOOOOOOOB';
+        // lag();
       } else {
-        winEffect.play()
+        winEffect.play();
         gameEnd.style.display = 'flex';
       }
 
       // lag function
       function lag() {
         while (true) {
-          while (true) {
-            while (true) {
-              while (true) {
-                while (true) {
-                  while (true) {
-                    while (true) {
-                      while (true) {
-                        while (true) {
-                          while (true) {
-                            while (true) {
-                              while (true) {
-                                while (true) {
-                                  while (true) {
-                                    while (true) {
-                                      while (true) {
-                                        while (true) {
-                                          while (true) {
-                                            while (true) {
-                                              while (true) {
-                                                while (true) {
-                                                  while (true) {
-                                                    window.open(
-                                                      'https://www.google.com/'
-                                                    );
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
+          window.open('https://www.google.com/');
         }
       }
     }, gameTime);

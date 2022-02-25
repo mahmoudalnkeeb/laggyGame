@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+
     <div id="counter"></div>
     <span class="score">SCORE()</span>
     <span class="time">remaining time()</span>
@@ -33,7 +35,14 @@
 
     </div>
     <div id="gameEnd">
-        <div class="result">Your Accurcy <span id="accurcy"> </span> You Missed <span id="missed"></span> Out Off <span id="total"></span></div>
+        <div class="result">
+            Your Accurcy
+            <span id="accurcy"> </span>
+            You Missed
+            <span id="missed"></span>
+            Out Off <span id="total"></span>
+        </div>
+        <div id="bad"></div>
         <button id="restart">Retry</button>
         <button id="settings">Game Settings</button>
     </div>
@@ -42,6 +51,7 @@
     </button>
     <audio id="audio" src="./assets/sounds/click.wav"></audio>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>
-    <script src="./assets/js/laggy.js"  ></script>
+    <script src="./assets/js/laggy.js"></script>
 </body>
+
 </html>
