@@ -85,7 +85,7 @@ button.laggy{
 }
 
 #difficulty option:first-child {
-    color: #000;
+    display: none;
 }
 
 #gameTime{
