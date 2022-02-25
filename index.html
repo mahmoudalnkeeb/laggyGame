@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laggy</title>
+    <link rel="stylesheet" href="./assets/css/laggy.css">
+    <link rel="shortcut icon" href="./assets/img/crosshair.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="counter"></div>
+    <span class="score">SCORE()</span>
+    <span class="time">remaining time()</span>
+    <div class="game-settings">
+        <label for="gameTime">enter game time in ms 1s = 1000ms</label>
+        <!-- <input type="number"  id="gameTime" placeholder="game time" > -->
+        <select id="difficulty">
+            <option value="0" selected disabled>Select Difficulty</option>
+        </select>
+        <button class="start">Start The Game</button>
+        <label class="notes">NOTES</label>
+        <ul>
+            <li><label>the game will start after 3 second of pressing start button</label></li>
+            <li><label>You will have 1 minute to finish the game</label></li>
+            <li><label>if you got less than 50% accurcy your browser will freeze</label></li>
+            <li><label>mobile users are not allowed</label></li>
+        </ul>
+
+    </div>
+    <div id="gameEnd">
+        <div class="result">Your Accurcy <span id="accurcy"> </span> You Missed <span id="missed"></span> Out Off <span id="total"></span></div>
+        <button id="restart">Retry</button>
+        <button id="settings">Game Settings</button>
+    </div>
+    <button class="laggy">
+        click
+    </button>
+    <audio id="audio" src="./assets/sounds/click.wav"></audio>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>
+    <script src="./assets/js/laggy.js"  ></script>
+</body>
+</html>
